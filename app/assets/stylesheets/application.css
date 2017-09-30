@@ -13,3 +13,31 @@
  *= require_tree .
  *= require_self
  */
+
+html{font-family: sans-serif;}
+h1{color:blue;}
+.list {background-color:lavender;
+font-size:15px;
+border:5px solid;
+color:black;
+width:40%;
+}
+body{
+    background-image: url(https://wallpaperbrowse.com/media/images/waterdrops-bright-hd-wallpaper-507074.jpg);
+}
+
+
+.button{
+    margin: 50px;
+}
+ul{
+    list-style:none
+}
+.delete{
+    display:inline-block;
+    background-color: red;
+    padding:10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px gray;
+    text-decoration: none;
+}
