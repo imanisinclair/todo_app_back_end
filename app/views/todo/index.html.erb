@@ -2,46 +2,16 @@
 
 <div class="list">
 <ul>
+  <%@todos.each do |todo| %>
 <li>
   <input type = "checkbox">
-  <a href= "show/1"> do homework
+  <a href= "/todo/show/<%= todo.id %>"> <%= todo.description %>
   </a>
+  <span> pomodoros <%= todo.pomodoro_estimate %> </span>
   <a href="#" class= "delete" >Delete </a>
   </li>
-<li>
-  <input type = "checkbox">
-<a href ="show/2">
- wash dishes
-  </a>
-  <a href="#" class= "delete" >Delete</a>  </li>
-<li>
-  <input type = "checkbox">
-<a href="show/3">
-  fold clothes
-</a>
-<a href="#" class= " delete" >Delete</a>
-  </li>
-<li>
-<input type = "checkbox">
-  <a href="show/4">
-    clean room
-  </a>
-  <a href="#" class= "delete" >Delete</a>
-  </li>
-<li>
-  <input type = "checkbox">
-  <a href= "show/5">
-    do assignment
-  </a>
-  <a href="#" class= "delete">Delete</a>
-</li>
-<li>
-<input type = "checkbox">
-<a href ="show/6">
-  go to bed
-</a>
-<a href="#"class = "delete">Delete</a>
-</li>
+  <%end%>
+
 </ul>
 </div>
 <button>+ Add</button>
